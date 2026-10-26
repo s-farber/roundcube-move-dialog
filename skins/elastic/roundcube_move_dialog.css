@@ -1,0 +1,36 @@
+#move-dialog .move-dialog-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#move-dialog .move-dialog-body input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+}
+
+#move-dialog .move-dialog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+#move-dialog .move-dialog-list li {
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+#move-dialog .move-dialog-list li.selected {
+  background: #e8f0fe;
+}
+
+#move-dialog .move-dialog-list li.move-dialog-empty {
+  color: #888;
+  cursor: default;
+  font-style: italic;
+}
